@@ -1,0 +1,16 @@
+title 0.5 Exercise
+note left of Browser
+A single page app looks similar to a traditional webpage
+as on startup we still grab the same files we need but 
+we have new js logic that lets us interact with the html
+page differently. 
+end note
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa
+Server-->Browser: HTML
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Server-->Browser: spa.js
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser:data.json
+

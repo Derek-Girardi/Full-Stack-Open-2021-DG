@@ -1,0 +1,24 @@
+title 0.6 Exercise
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+
+note left of Browser
+On submit of the new note, we have spa.js that will 
+take the new note from the form, push contents into the list,
+re render the list on the page and send the note to the server
+end note
+
+Server-->Browser: Responds with a 201 status code
+
+note right of Server
+For the server to know what we need to 
+do with this new JSON data, we need to make 
+sure the request has the correct content-type
+header application/json. We handle this with 
+js once the form is submitted. No redirects 
+are needed. 
+end note
+
+
+
+

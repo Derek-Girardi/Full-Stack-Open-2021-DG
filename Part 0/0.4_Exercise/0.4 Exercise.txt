@@ -1,0 +1,21 @@
+title 0.4 Exercise
+
+Browser->Server: HTTP POST https://studies.cs.helsinki.fi/exampleapp/new_note
+Server-->Browser: URL-Redirect to address defined in location header, will cause a browser refresh on /notes
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/notes
+Server-->Browser: HTML
+Browser->Server: HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Server-->Browser: main.css
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/main.js
+Server-->Browser:main.js
+note left of Browser: 
+Browser will now execute the JS that
+will request JSON and parse it from server
+end note
+Browser->Server:HTTP GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Server-->Browser: {content: "Example data",date: "2021-08-14T20:08:07.037Z"}
+note left of Browser: 
+Browser will now execute event handler
+to render data to display
+end note
+
